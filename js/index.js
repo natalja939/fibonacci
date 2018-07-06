@@ -1,12 +1,12 @@
 //Loop
 
-  let n = parseFloat(prompt('Enter number'));
+  const n = parseInt(prompt('Enter number'));
 
   function fib(n) {
     
        let fibPrev  = 1,
            fibPrePrev = 1;
-          for (let i = 1; i <=n; i++) {
+          for (let i = 3; i <=n; i++) {
              let fibNext = fibPrev + fibPrePrev;
                  fibPrePrev = fibPrev;
                  fibPrev = fibNext;
@@ -20,24 +20,23 @@
 
 //Array
 
-//  let n = parseFloat(prompt('Enter number'));
+//  const n = parseInt(prompt('Enter number'));
 
 //  let fibArr = [1,1];
-//      for (let i = 1; i <= n; i++) {
+//      for (let i = 3; i <= n; i++) {
 //      fibArr.push(fibArr[fibArr.length - 1] + fibArr[fibArr.length - 2]);
 //      }
         
-//  let result = fibArr;
+//  let result = fibArr.pop();
 //  alert(result);
     
 //recursion
-//   let n = parseFloat(prompt('Enter number'));
+//   const n = parseInt(prompt('Enter number'));
 //    function fib(n) {
-//        let fib;
 //        if (n > 1) {
 //            return fib(n - 1) + fib(n - 2);
 //        }else {
-//		    return fib(n);
+//		    return 1;
 //	    }
 //    }
 //    let result = fib(n);
